@@ -1,0 +1,397 @@
+/*=============================
+General Styles
+=============================*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Poppins';
+}
+
+::-webkit-scrollbar{
+	width: 8px;
+}
+
+::-webkit-scrollbar-track{
+	background: #333;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #62BCFC;
+	border-radius: 50px;
+}
+
+::selection{
+	background: #7392ff;
+	color: #fff;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
+section{
+	width: 100%;
+	padding: 10px 30px;
+}
+
+.title{
+	text-align: center;
+	color: #35a22c;
+	font-size: 40px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+.para{
+	color: #777;
+	text-align: center;
+}
+
+
+
+
+/*=============================
+Navigation Bar
+=============================*/
+header{
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/main.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.nav-item{
+	margin: 0 12px;
+}
+
+.nav-link{
+	color: #fff!important;
+	letter-spacing: 1px;
+	transition: color .3s ease!important;
+}
+
+.nav-link.active,
+.nav-link:hover{
+	color: #35a22c!important;
+}
+
+.navbar button i{
+	color: #fff;
+}
+
+.navbar.addnavbg{
+	background: rgba(0,0,0,0.6);
+}
+
+
+/*=============================
+Hero Section
+=============================*/
+
+.hero{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero .content{
+	text-align: center;
+}
+
+.hero .content img{
+	border: 5px solid #f6f6f7;
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+
+.hero .content h1{
+	color: #fff;
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
+.hero .content h1 span{
+	color: #35a22c;
+}
+
+.hero .content button{
+	padding: 4px 10px;
+	border: none;
+	outline: none;
+	color: #fff;
+	margin: 5px 6px;
+	background: rgba(255,255,255,0.1);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	cursor: default;
+}
+
+/*=============================
+About Section
+=============================*/
+
+.about{
+	padding: 50px;
+}
+
+.skills{
+	margin-top: 60px;
+}
+
+.skills .row .col-md-4{
+	margin-bottom: 30px;
+}
+
+.progress-bar{
+	background: linear-gradient(to right, #35a22c ,#7392ff)!important;
+}
+
+
+/*=============================
+Counter Section
+=============================*/
+
+.counter{
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../img/main2.jpg');
+	background-size: cover;
+	padding: 50px;
+	background-attachment: fixed;
+}
+
+.counter .row{
+	text-align: center;
+}
+
+.counter .row h1{
+	color: #fff;
+	font-size: 45px;
+}
+
+.counter .row p{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+
+/*=============================
+Services Section
+=============================*/
+
+.services{
+	padding: 50px 0;
+}
+
+.service-box{
+	margin-top: 50px;
+}
+
+.service-item{
+	padding: 30px;
+	text-align: center;
+	margin-bottom: 30px;
+	transition: all .4s ease;
+}
+
+.service-item:hover{
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	border-radius: 5px;
+}
+
+.service-item i{
+	font-size: 35px;
+	margin-bottom: 15px;
+	color: #7392ff;
+}
+
+.service-item h6{
+	color: #333;
+}
+
+.service-item p{
+	color: #777;
+	font-size: 15px;
+}
+
+
+
+/*=============================
+Portfolio Section
+=============================*/
+
+.portfolio{
+	padding: 50px 0;
+	background: #f5f5f5;
+}
+
+.portfolio-box{
+	margin-top: 50px;
+}
+
+.p-item{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.p-item img{
+	width: 100%;
+	margin-bottom: 20px;
+	transition: opacity .3s ease;
+	opacity: .8;
+}
+
+.p-item img:hover{
+	opacity: 1;
+}
+
+.p-item:hover a{
+	opacity: 1;
+}
+
+.p-item a{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	background: #7392ff;
+	padding: 10px 20px;
+	text-decoration: none;
+	opacity: 0;
+	transition: opacity .5s ease;
+}
+
+.p-item a:hover{
+	color: #fff;
+}
+
+
+
+/*=============================
+Call to action
+=============================*/
+
+.cta{
+	padding: 50px 0;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/cta.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container-lg{
+	text-align: center;
+	color: #fff;
+}
+
+.container-lg h3{
+	font-size: 40px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.container-lg p{
+	color: #999;
+}
+
+.container-lg button{
+	padding: 10px 30px;
+	border: 2px solid #7392ff;
+	outline: none;
+	background: #7392ff;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 1px;
+	transition: background .3s ease-out;
+	margin-top: 20px;
+}
+
+.container-lg button:hover{
+	background: transparent;
+}
+
+
+
+/*=============================
+Contact Section
+=============================*/
+
+.contact .info{
+	text-align: left;
+	padding: 10px 50px;
+}
+
+.contact .info h3{
+	font-size: 20px;
+	color: #555;
+}
+
+.contact .info p{
+	color: #666;
+}
+
+form .btn button:hover{
+	color: #7392ff;
+}
+
+
+@media (max-width: 768px){
+	.contact .info{
+		display: none;
+	}
+
+	.contact .row:nth-child(2) .col-lg-8{
+		width: 100%;
+	}
+}
+
+
+
+
+/*=============================
+footer Section
+=============================*/
+
+footer{
+	background: #444;
+	padding: 30px 0;
+}
+
+footer span{
+	margin: 0 10px;
+}
+
+footer span a{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+footer span a:hover{
+	text-decoration: none;
+	color: #7392ff;
+}
+
+footer i{
+	margin: 0 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+footer i:hover{
+	color: #35a22c;
+}
